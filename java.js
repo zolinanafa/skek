@@ -37,10 +37,10 @@ function crea_countdown(id_avviso, tempo_start, intervallo, studio, url)
 	for(i=0; i<tempo_start; i++)
 	{
 		//conta i secondi
-		secondi++;
+		secondi = secondi + 55;
 		
 		//calcola i minuti
-		if(secondi == 60){secondi = 0; minuti++;}
+		if(secondi > 60){secondi = 0; minuti++;}
 		//calcola le ore
 		if(minuti == 60){minuti = 0; ore++;}
 		//calcola i giorni
@@ -173,10 +173,10 @@ function attesa_esame(tempo_start)
 	for(i=0; i<tempo_start; i++)
 	{
 		//conta i secondi
-		secondi++;
+		secondi = secondi + 55;
 		
 		//calcola i minuti
-		if(secondi == 60){secondi = 0; minuti++;}
+		if(secondi > 60){secondi = 0; minuti++;}
 		//calcola le ore
 		if(minuti == 60){minuti = 0; ore++;}
 		//calcola i giorni
